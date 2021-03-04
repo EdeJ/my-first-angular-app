@@ -13,17 +13,12 @@
 <app-server></app-server>
 <app-server></app-server>
 <label>Username:</label>
-<input
-  type="text"
-  class="form-control"
-  [(ngModel)]="userName"
-  (input)="updateUserName($event)"
-/>
+<input type="text" class="form-control" [(ngModel)]="userName" />
 <p>{{ userName }}</p>
 <button
   class="btn btn-primary"
-  (click)="onResetUserName()"
-  [disabled]="buttonDisabled"
+  (click)="resetUserName()"
+  [disabled]="userName === ''"
 >
   reset user name
 </button>

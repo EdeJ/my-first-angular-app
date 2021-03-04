@@ -31,7 +31,7 @@ export class ServersComponent implements OnInit {
     this.serverName = (<HTMLInputElement>event.target).value;
   }
 
-  onResetUserName() {
+  resetUserName() {
     this.userName = '';
     this.buttonDisabled = true;
   }
