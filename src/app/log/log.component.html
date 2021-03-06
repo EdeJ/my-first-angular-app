@@ -1,0 +1,12 @@
+<p>log works!</p>
+<button (click)="onClick()" class="btn btn-success">Display Details</button>
+<p *ngIf="display">Secret Password = tuna</p>
+<ul>
+  <li
+    *ngFor="let clickTime of clickLog; index as i"
+    [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+    [ngClass]="{ 'white-text': i >= 4 }"
+  >
+    {{ clickTime }}
+  </li>
+</ul>
