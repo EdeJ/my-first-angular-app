@@ -16,6 +16,6 @@ export class LogComponent implements OnInit {
   onClick() {
     console.log('click');
     this.display = !this.display;
-    this.clickLog.push(new Date().getTime());
+    this.clickLog.push(new Date());
   }
 }
